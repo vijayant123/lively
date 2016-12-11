@@ -1,5 +1,5 @@
 {
-  "name": "lively",
+  "name": "lively-reload",
   "version": "0.0.1",
   "description": "a live reload server for any folder",
   "main": "index.js",

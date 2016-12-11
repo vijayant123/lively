@@ -11,7 +11,7 @@ Uses [livereload](https://www.npmjs.com/package/livereload), [harmon](https://ww
 
 ### Install
 ```sh
-$ npm install -g lively
+$ npm install -g lively-reload
 ```
 ### Usage:
 #### lively [options]
