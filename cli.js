@@ -11,10 +11,9 @@ var core = require('./lib/core');
 var pkg = require('./package.json');
 
 program.version(pkg.version)
-.option('-p, --port <n>', 'The port to which the server should listen to. [3000]', parseInt)
-.option('-w, --watch [folder path]', 'The folder to watch for changes. [current directory]', '.')
-.option('-e, --endpoint [url]', 'The endpoint/server to redirect requests to. [http://localhost/endpoint]', 'http://localhost/endpoint')
-.option('--verbose', 'Set the logging level to verbose.');
+.option('-p, --port <n>', 'The port to which the server should listen to. Default: 3000', parseInt)
+.option('-w, --watch [folder path]', 'The folder to watch for changes. Defaults to current directory', '.')
+.option('-e, --endpoint [url]', 'The endpoint/server to redirect requests to. Default: http://localhost/endpoint', 'http://localhost/endpoint');
 
 /* Hack the argv object so that commander thinks that this script is called
 * 'pkg.name'. The help info will look nicer. */
